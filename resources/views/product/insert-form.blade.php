@@ -3,7 +3,7 @@
 @section('content')
     <h1>Insert New Product</h1>
 
-    <form action="{{ route('insert.product') }}" class="row g-3"  method="POST" enctype="multipart/form-data">
+    <form action="{{ route('insert_product') }}" class="row g-3"  method="POST" enctype="multipart/form-data">
         @csrf
         <div class="col-md-6">
             <label for="name" class="form-label">Product Name</label>
