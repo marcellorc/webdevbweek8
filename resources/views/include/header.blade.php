@@ -16,6 +16,11 @@
                     <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a>
                 </li>
                 @auth
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('orders') ? 'active' : '' }}" href="{{ route('orders') }}">My Orders</a>
+                    </li>
+                @endauth
+                @auth
                     <a href="{{ route('view_cart') }}" class="text=white me-3 fs-5"><i class="fas fa-shopping-cart"></i></a>
                 @endauth
             </ul>
